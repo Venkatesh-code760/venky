@@ -1,0 +1,20 @@
+{
+  "name": "ai-travel-planner",
+  "version": "1.0.0",
+  "description": "AI Travel Planner - MERN Stack MVP built as per SRS specifications",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build:client": "npm run build --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "keywords": ["travel-planner", "mern", "ai", "trip-itinerary", "full-stack"],
+  "author": "MERN Stack Architect",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
